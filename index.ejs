@@ -3,33 +3,25 @@ layout: default.ejs
 permalink: /
 ---
 <section class="top">
-	<h2>Welcome to our demo store!</h2>
+	<h2>Multi-Player Dedicated Server Project</h2>
 	<p>
-		At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-		atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-		similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-		Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-		eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
-		assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
-		necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-		Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-		consequatur aut perferendis doloribus asperiores repellat.
+		MPDS 项目免费提供大量联机游戏(开源为主)的专用服务器, 在游戏的服务器地址栏中输入 <strong>mpds.xyz</strong> 和游戏相应的端口即可畅玩
 	</p>
 </section>
-<div class="list-group">
+<div class="list-group-in-index">
 	<section>
 		<%- include('/item-list', {
-			title: 'Our Products',
-			list: collections.products,
-			url: '/products/',
-			map: (product) => ({
-				image: product.data.image,
-				url: product.url,
-				label: product.data.name,
+			title: '游戏',
+			list: collections.games,
+			url: '/games/',
+			map: (game) => ({
+				image: game.data.image,
+				url: game.url,
+				label: game.data.name,
 			}),
 		}) %>
 	</section>
-
+<!--
 	<section>
 		<%- include('/item-list', {
 			title: 'Recent Articles',
@@ -41,4 +33,5 @@ permalink: /
 			}),
 		}) %>
 	</section>
+-->
 </div>

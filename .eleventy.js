@@ -8,8 +8,8 @@ module.exports = (eleventyConfig) => {
 		return collection.getFilteredByGlob("_posts/**/*.md");
 	});
 
-	eleventyConfig.addCollection("products", (collection) => {
-		return collection.getFilteredByGlob("_products/**/*.md");
+	eleventyConfig.addCollection("games", (collection) => {
+		return collection.getFilteredByGlob("_games/**/*.md");
 	});
 
 	return {
@@ -19,7 +19,7 @@ module.exports = (eleventyConfig) => {
 			"css",
 			"svg",
 			"png",
-			"mustache",
+			"mpds",
 		],
 		passthroughFileCopy: true,
 	};

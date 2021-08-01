@@ -1,0 +1,13 @@
+---
+permalink: /games.json
+---
+<%- JSON.stringify(
+
+collections.games.map((game) => ({
+	id: "11ty-" + game.fileSlug,
+	name: game.data.name,
+	image: config.siteUrl + game.data.image,
+	data: Object.keys(game),
+}))
+
+) %>
