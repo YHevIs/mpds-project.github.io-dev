@@ -20,6 +20,7 @@ module.exports = (eleventyConfig) => {
 			"svg",
 			"png",
 			"mpds",
+			"jpg"
 		],
 		passthroughFileCopy: true,
 	};

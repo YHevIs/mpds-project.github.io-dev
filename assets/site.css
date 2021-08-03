@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box
+}
 html,
 body,
 .main {
@@ -25,34 +28,37 @@ strong {
   /* height: 100%; */
   /* padding: 1em; */
 }
-
+.main > header{
+  background: none;
+}
 .main > header,
 .main > footer {
   flex: 0;
   width: 100%;
   max-width: 100%;
-  background-color: #e0e3f5;
 }
 .main > footer > p{
-  margin-left: 240px;
+  /* margin-left: 240px; */
 }
 .content{
-  max-width: 1440px;
+  width: 100%;
 }
-
 .title {
   display: flex;
   justify-content: center;
-  font-size: 2em;
-  margin: 1em 0;
+  font-size: 1.8em;
+  margin: 0 auto;
   line-height: 1.5em;
+
+  width: 100%;
+
+  background: #1d1e30;
 }
 
 .title a {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 75%;
   /* margin-left: -0.2em; */
 }
 
@@ -60,7 +66,7 @@ strong {
   display: block;
   content: "";
   height: 2em;
-  background-image: url(/assets/logo-joystick.png);
+  /* background-image: url(/assets/logo-joystick.png); */
   background-size: 120%;
   flex: 0 0 2em;
   background-position: center;
@@ -68,10 +74,32 @@ strong {
 }
 
 section.top {
+  height: 300px;
   border-bottom: 0.3em solid #e0e3f5;
   margin-bottom: 1em;
+  background: url(/assets/banner-bg.jpg);
+  background-position: 30%;
+  background-size: 100%;
 }
-
+section.top > .mask {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  height: 100%;
+  padding: 60px 12.5% 60px 12.5%;
+  background: rgba(29,30,48,.9);
+}
+section.top > .mask > h2{
+  color: #fff;
+}
+section.top > .mask > p{
+  color: #fff;
+}
+section.top > .mask > p > strong{
+  color: #eed556;
+}
 .list-group-in-index {
 	display: block;
 }
@@ -138,9 +166,9 @@ section.top {
 
 a,
 a:visited {
-  text-decoration: none;
   font-weight: bold;
-  color: #4e3e2c;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
