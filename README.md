@@ -2,7 +2,7 @@
 
 1. Fork 项目
 2. 在项目根目录执行 `npm install`
-3. 在项目根目录执行 `eleventy --server`
+3. 在项目根目录执行 `npm run start`
 4. 开发
 5. 提交 PR
 
