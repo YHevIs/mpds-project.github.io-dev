@@ -1,5 +1,6 @@
 *{
-  box-sizing: border-box
+  box-sizing: border-box;
+  color: rgb(231, 231, 231);
 }
 html,
 body,
@@ -36,12 +37,19 @@ strong {
   flex: 0;
   width: 100%;
   max-width: 100%;
+  background: #1d1e30;
+}
+.main > footer {
+  padding: 10px 0;
 }
 .main > footer > p{
   /* margin-left: 240px; */
+  width: 75%;
+  margin: 0 auto;
 }
 .content{
   width: 100%;
+  background: #2d2f4c;
 }
 .title {
   display: flex;
@@ -75,7 +83,7 @@ strong {
 
 section.top {
   height: 300px;
-  border-bottom: 0.3em solid #e0e3f5;
+  border-bottom: 0.2em solid #eed556;
   margin-bottom: 1em;
   background: url(/assets/banner-bg.jpg);
   background-position: 30%;
@@ -100,15 +108,31 @@ section.top > .mask > p{
 section.top > .mask > p > strong{
   color: #eed556;
 }
+
+
+/* game list */
+
 .list-group-in-index {
 	display: block;
 }
-
-.list-group {
-  display: block;
+.list-group-in-index section{
+  width: 75%;
+  margin: 0 auto;
 }
 
-
+/* 详情列表 */
+.list-title {
+  padding: 10px 0;
+}
+.list-title h1{
+  width: 75%;
+  margin: 0 auto;
+}
+.list-group {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+}
 .list-group img {
 	display: inline-block;
 	margin: 0px 0px;
@@ -117,8 +141,15 @@ section.top > .mask > p > strong{
 .list-group p, .list-group a{
 	display: inline-block;
 	margin: 20px 20px;
-}  
-
+} 
+.game-main{
+  width: 75%;
+  margin: 0 auto;
+}
+.game-main img{
+  width: 100%;
+}
+/* 媒体查询 */
 @media (min-width: 500px) {
   .list-group {
     display: flex;
@@ -141,6 +172,7 @@ section.top > .mask > p > strong{
 .content-list a {
   display: flex;
   padding: 0.5em;
+  border-bottom: 0.2em solid rgba(0,0,0,0);
 }
 
 .content-list img {
@@ -189,7 +221,8 @@ h2 a:hover,
 
 .content-list a:hover,
 .item:hover {
-  background-color: #f3f3f3;
+  /* background-color: #f3f3f3; */
+  border-bottom: 0.2em solid #eed556;
 }
 
 .snipcart-add-item {
