@@ -33,6 +33,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          external_repository: YHevIs/mpds-project.github.io
+          external_repository: mpds-project/mpds-project.github.io
           publish_branch: master  # default: gh-pages
           publish_dir: ./_site
